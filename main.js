@@ -1,3 +1,4 @@
+// Author Imran Abubakar 
 var path = "./data.json";
 var app = new Vue({
   el: "#app",
