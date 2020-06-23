@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <title>Leaderboard</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
@@ -116,7 +116,6 @@
         <table class="table is-fullwidth is-hoverable">
           <thead>
             <tr>
-              <th>Position</th>
               <th>Full Name</th>
               <th>Slack Name</th>
               <th>Email</th>
@@ -125,7 +124,6 @@
           </thead>
           <tbody v-for="intern in sort(filteredItems)" :key="intern.id">
             <tr>
-              <th>{{intern.id}}</th>
               <td>{{intern.full_name}}</td>
               <td>{{intern.slack_name}}</td>
               <td>{{intern.email}}</td>
@@ -138,6 +136,5 @@
   </body>
   <script src="vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="config.js"></script>
   <script src="main.js"></script>
 </html>

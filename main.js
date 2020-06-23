@@ -4,7 +4,6 @@ var app = new Vue({
   data: {
     interns: [],
     search: "",
-    positions: [],
   },
   methods: {
     sort: function (arr) {
@@ -29,6 +28,14 @@ var app = new Vue({
       } else {
         return this.interns;
       }
+    },
+    positions() {
+      var pos = [];
+      for (let index = 1; index < this.interns.length - 1; index++) {
+        pos.push(index);
+      }
+      console.log(pos);
+      return pos;
     },
   },
   mounted() {
