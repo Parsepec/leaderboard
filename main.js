@@ -1,3 +1,4 @@
+var path = "./data.json";
 var app = new Vue({
   el: "#app",
   data: {
@@ -31,7 +32,7 @@ var app = new Vue({
     },
   },
   mounted() {
-    axios.get("./data.json").then((response) => {
+    axios.get(path).then((response) => {
       this.interns = response.data;
     });
   },

@@ -123,10 +123,7 @@
               <th>Score</th>
             </tr>
           </thead>
-          <tbody
-            v-for="intern in makePositions(filteredItems)"
-            :key="intern.id"
-          >
+          <tbody v-for="intern in sort(filteredItems)" :key="intern.id">
             <tr>
               <th>{{intern.id}}</th>
               <td>{{intern.full_name}}</td>
